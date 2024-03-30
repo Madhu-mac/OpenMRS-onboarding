@@ -83,36 +83,36 @@ export default function MultiRouteWrapper() {
         if (index === 0 /* or step.target === '#home' */) {
             if (action === 'prev' && index === 0) {
                 setState({ run: false });
-                navigate('/multi-route');
+                navigate('/');
             } else {
                 setState({ run: false });
-                navigate('/multi-route/a');
+                navigate('/a');
             }
         } else if (index === 1) {
             if (action === 'next') {
                 setState({ run: false });
-                navigate('/multi-route/b');
+                navigate('/b');
             } else {
                 setState({ run: false });
-                navigate('/multi-route');
+                navigate('/');
                 setState({ run: true, stepIndex: 0 });
             }
         } else if (index === 2) {
             if (action === 'next') {
                 setState({ run: false });
-                navigate('/multi-route/c');
+                navigate('/c');
             } else {
                 setState({ run: false });
-                navigate('/multi-route/a');
+                navigate('/a');
             }
         } else if (index === 3) {
             if (action === 'next') {
                 setState({ run: false });
-                navigate('/multi-route');
+                navigate('/');
                 setState({ run: true, stepIndex: 0 });
             } else {
                 setState({ run: false });
-                navigate('/multi-route/b');
+                navigate('/b');
             }
         }
     } else if (action === 'reset' || lifecycle === 'complete') {

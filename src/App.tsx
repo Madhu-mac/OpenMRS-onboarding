@@ -40,7 +40,7 @@ function App() {
   }}>
       <BrowserRouter>
       <Routes>
-        <Route element={<MultiRoute />} path="/multi-route">
+        <Route element={<MultiRoute />} path="/">
             <Route element={<MultiRouteHome />} index />
           <Route element={<MultiRouteA />} path="a" />
           <Route element={<MultiRouteB />} path="b" />

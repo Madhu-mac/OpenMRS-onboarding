@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <Container verticalPadding>
       <Spacer distribution="center">
-        <NavLink end style={style} to="/multi-route">
+        <NavLink end style={style} to="/">
           {({ isActive }) => (
             <Button bg="#005d5d" invert={!isActive} size="sm">
               Home
@@ -16,7 +16,7 @@ export default function Header() {
           )}
         </NavLink>
 
-        <NavLink style={style} to="/multi-route/a">
+        <NavLink style={style} to="/a">
           {({ isActive }) => (
             <Button bg="#005d5d" invert={!isActive} size="sm">
               <ShoppingCart />
@@ -24,14 +24,14 @@ export default function Header() {
           )}
         </NavLink>
 
-        <NavLink style={style} to="/multi-route/b">
+        <NavLink style={style} to="/b">
           {({ isActive }) => (
             <Button bg="#005d5d" invert={!isActive} size="sm">
               <Pen />
             </Button>
           )}
         </NavLink>
-        <NavLink style={style} to="/multi-route/c">
+        <NavLink style={style} to="/c">
           {({ isActive }) => (
             <Button bg="#005d5d" invert={!isActive} size="sm">
               <Events />
